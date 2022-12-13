@@ -42,46 +42,46 @@ Se crea una estructura de tablero, el recibirá como parámetros la dimensión d
 
 Aquí mostramos los valores que permanecerán constantes durante la ejecución del juego. 
 
-##### game_started = True 
+- game_started = True 
 Nos indica que el juego está en progreso
 
-##### BARCO_SIMB= "O"
+- BARCO_SIMB= "O"
 Representa una eslora de un barco
 
-##### AGUA_SIMB = " "
+- AGUA_SIMB = " "
 Representa el mar (agua)
 
-##### TOCADO_SIMB = "X"
+- TOCADO_SIMB = "X"
 Representa una eslora tocada (golpeada)
 
-##### FALLAR_SIMB = "-"
+- FALLAR_SIMB = "-"
 Representa un disparo fallido (disparo al agua)
 
-##### LISTA_BARCOS = [(4, 1), (3, 2), (2, 3), (1, 4)] 
+- LISTA_BARCOS = [(4, 1), (3, 2), (2, 3), (1, 4)] 
 Por cada tupla, el primer valor corresponde a las esloras, y el segundo al número de barcos.
 
-##### coord_letras = "ABCDEFGHIJ"
+- coord_letras = "ABCDEFGHIJ"
 Nos servirá como referencia para leer la posición donde se desea disparar, utilizado en la función `colocar_barco(barco)`
 
-##### LISTA_EJE_X = ['A','B','C','D','E','F','G','H','I','J']
+- LISTA_EJE_X = ['A','B','C','D','E','F','G','H','I','J']
 El eje de abscisas, comúnmente representado con "x" y que corresponde al eje horizontal, es decir, las filas.
 
-##### LISTA_EJE_Y = [1,2,3,4,5,6,7,8,9,10]
+- LISTA_EJE_Y = [1,2,3,4,5,6,7,8,9,10]
 El eje de ordenadas, comúnmente representado con "y" y que corresponde al eje vertical, es decir, las columnas.
 
-##### es_Skynet = False
+- es_Skynet = False
 Nos sirve para identificar cuando es el turno de la CPU.
 
-##### salir = False
+- salir = False
 Salir del juego, por defecto False, pero si el usuario lo solicita, pasará a True.
 
-##### jugador1 = Jugador()
+- jugador1 = Jugador()
 Jugador usuario.
 
-##### Skynet = Jugador()
+- Skynet = Jugador()
 Jugador CPU.
 
-##### vidas = conteo_vidas()
+- vidas = conteo_vidas()
 variable que no se implementa en esta versión del juego, pero que corresponde a una función creada para que las vidas se adapten al número de barcos (y por ende, de esloras) que tengan, en caso de modificarse en el juego. 
 
 
